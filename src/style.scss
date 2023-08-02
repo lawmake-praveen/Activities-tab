@@ -4,7 +4,6 @@ $box-shadow: #e2e2e2;
 
 body {
   margin: 0;
-  height: 100vh;
 }
 * {
   font-family: "Inter", "sans-serif";
@@ -170,10 +169,10 @@ body {
     z-index: 10;
 
     .form {
-      width: clamp(380px, 90vw, 550px);
+      width: clamp(300px, 90vw, 550px);
       height: auto;
       border-radius: 20px;
-      padding: 20px;
+      padding: 30px 20px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -184,6 +183,11 @@ body {
         outline: none;
         border: none;
         font-size: 1rem;
+      }
+      .head-form {
+        font-size: 1.9rem;
+        text-align: center;
+        color: #fff;
       }
       input[type="text"] {
         padding: 12px;

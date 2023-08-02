@@ -38,6 +38,7 @@ const NewForm = () => {
         onSubmit={handleSubmit}
         onClick={(e) => e.stopPropagation()}
       >
+        <h1 className="head-form">New Activity</h1>
         <input
           type="text"
           placeholder="Your Todo"
