@@ -64,6 +64,9 @@ body {
           display: grid;
           place-content: center;
         }
+        &:active {
+          transform: scale(92%);
+        }
       }
     }
   }
@@ -204,6 +207,10 @@ body {
         width: fit-content;
         padding: 8px 12px;
         margin: auto;
+
+        &:active {
+          transform: scale(92%);
+        }
       }
     }
   }
@@ -292,7 +299,7 @@ body {
           padding: 3px 6px !important;
           font-size: 0.8rem !important;
         }
-        input[type='radio']:checked + label {
+        input[type="radio"]:checked + label {
           padding: 3px 6px;
           border-radius: 6px;
         }
