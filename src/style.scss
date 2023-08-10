@@ -103,6 +103,7 @@ body {
         align-items: center;
         gap: 20px;
         margin-top: 20px;
+        width: 100%;
 
         .checkbox-div {
           width: 24px;
@@ -126,11 +127,12 @@ body {
         .content {
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 4px;
+          overflow: auto;
 
           .todo-content {
             font-weight: 550;
-            white-space: pre-wrap;
+            word-wrap: normal;
           }
           .todo-timing {
             font-size: 0.9rem;
@@ -218,7 +220,7 @@ body {
 @media (max-width: 700px) {
   .app {
     max-width: 500px;
-    padding: 20px;
+    padding: 20px 14px;
     border-radius: 16px;
 
     .all-tasks {
@@ -226,6 +228,7 @@ body {
         .new-task {
           padding: 14px;
           border-radius: 16px;
+          gap: 10px;
 
           .checkbox-div {
             width: 20px;
@@ -264,6 +267,26 @@ body {
           }
           .new-activity {
             display: none;
+          }
+        }
+      }
+    }
+    .all-tasks {
+      .tasks {
+        .new-task {
+          gap: 6px;
+          grid-template-columns: 21px auto auto;
+
+          .content {
+            .todo-content {
+              font-size: 0.9rem;
+            }
+          }
+          .check-and-edit-section {
+            .icons {
+              flex-direction: column;
+              width: 23px;
+            }
           }
         }
       }
@@ -307,6 +330,7 @@ body {
       .tasks {
         .new-task {
           padding: 10px;
+          grid-template-columns: 17px auto auto;
           border-radius: 10px;
 
           .checkbox-div {
@@ -324,7 +348,7 @@ body {
           .check-and-edit-section {
             .icons {
               gap: 8px;
-              width: 45px;
+              width: 20px;
 
               span {
                 font-size: 1.2rem;
